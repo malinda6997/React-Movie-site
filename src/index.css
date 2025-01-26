@@ -21,6 +21,13 @@
 }
 
 @layer base {
+
+  html,
+  body {
+    @apply overflow-x-hidden;
+    /* Prevent horizontal scrolling */
+  }
+
   body {
     font-family: "DM Sans", serif;
     font-optical-sizing: auto;
@@ -50,7 +57,8 @@
 
 @layer components {
   .pattern {
-    @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0;
+    @apply bg-hero-pattern w-full h-screen bg-center bg-cover absolute z-0;
+    /* Changed w-screen to w-full */
   }
 
   .wrapper {
@@ -73,7 +81,8 @@
     }
 
     & ul li img {
-      @apply w-[127px] h-[163px] rounded-lg object-cover -ml-3.5;
+      @apply w-[127px] h-[163px] rounded-lg object-cover ml-0;
+      /* Removed negative margin */
     }
   }
 
@@ -97,7 +106,8 @@
     @apply space-y-9;
 
     & ul {
-      @apply grid grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+      @apply grid grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full;
+      /* Added w-full */
     }
   }
 
@@ -105,7 +115,8 @@
     @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10;
 
     & img {
-      @apply rounded-lg h-auto w-full;
+      @apply rounded-lg h-auto w-full max-w-full;
+      /* Ensure no overflow */
     }
 
     & h3 {
