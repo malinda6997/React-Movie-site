@@ -1,5 +1,5 @@
 # Use Node.js for building the React app
-FROM 20-alpine3.20 AS build
+FROM alpine:3.20 AS build
 
 # Set working directory inside the container
 WORKDIR /app
