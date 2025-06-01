@@ -1,8 +1,31 @@
-# React + Vite
+# React Movie Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based movie website that uses the TMDB API to fetch and display movie data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Search for movies using TMDB API
+- Display movie details such as title, overview, and ratings
+- Responsive design for desktop and mobile
+- Built with React and Tailwind CSS
+
+---
+
+## Prerequisites
+
+- Node.js v22.13.1 or higher
+- npm (comes with Node.js)
+- Docker (optional, for containerization)
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/malinda6997/React-Movie-site.git
+cd React-Movie-site
+
